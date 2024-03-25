@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lafleur Contact</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin-bottom: 3vh;
+        }
+        header {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #menuheader a {
+            text-decoration: none;
+            color: #fff;
+        }
+        #menuheader{
+            list-style-type: none;
+        }
+        #menuheader li{
+            display: inline;
+            margin-left: 20px;
+        }
+        .banner img {
+            max-height: 50px; 
+            margin-left: 20%;
+        }
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .login-space p{
+            color: #fff;
+        }
+        .buttonlogin {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .buttonlogin:hover {
+            background-color: #2980b9;
+        }
+        #menugauche{
+            margin-top: 0%;
+            background-color: grey;
+            height: 100vh;
+            width: 15%;
+            float: left;
+        }
+
+        #menugaucheliste a {
+            text-decoration: none;
+            color: #fff;
+        }
+        #menugaucheliste{
+            margin-top: 50%;
+            list-style-type: none;
+        }
+        #menugaucheliste li{    
+            margin-bottom: 20%;
+        }
+        #principal{
+            float: inline-start;
+            height: 100vh;
+            background-color: white;
+            width: 90vh;
+            float: center;
+            margin-left: 35vh;
+        }
+
+
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            height: 100px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        label{
+            display: inline;
+        }
+
+    </style>
+    
+</head>
+<body>
+    
+
+
+<header>
+    <div class="banner">
+        <a href="index.html"><img src="img/Untitled.jpeg" alt="Logo du site"></a>
+    </div>
+        <ul id="menuheader">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="bulbes.html">Bulbes</a></li>
+            <li><a href="rosiers.html">Rosiers</a></li>
+            <li><a href="massifs.html">Plantes à massif</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    <div class="login-space">
+       <p>Vous êtes déjà client ?<br> <a href="#" class="buttonlogin">Connectez-vous</a></p>
+    </div>
+</header>
+
+<main>
+    <div id="menugauche">
+            <ul id="menugaucheliste">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="bulbes.html">Bulbes</a></li>
+                <li><a href="rosiers.html">Rosiers</a></li>
+                <li><a href="massifs.html">Plantes à massif</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+    </div>
+    <div id="principal">
+        <div>
+            <center><p>Demande de contact</p></center>
+        <form action="/submit_form" method="post">
+
+            <label for="name">Date de contact</label>
+            <input type="date" id="datecontact" name="date" required>
+            <br><br>
+            <label for="name">Entrez votre nom</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="firstname">Prénom</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="email">Sexe</label>
+            <input type="radio" name="sexe" value="homme" required>
+            Homme
+            <input type="radio" name="sexe" value="femme" required  >
+            Femme
+            <br><br>
+            <label for="name">Date de naissance</label>
+            <input type="date" id="datenaissance" name="date" required>
+            <br><br>
+            <label for="name">Secteur d'activité</label>
+            <select id="secteur" name="secteur" required>
+                <option value="finance">Finance</option>
+                <option value="technologie">Technologie</option>
+                <option value="santé">Santé</option>
+                <option value="éducation">Éducation</option>
+            </select>
+            <br><br>
+            <label for="name">Sujet</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="name">Conenu</label>
+            <textarea name="message" id="message" placeholder="Saisissez votre message ici..."></textarea>
+            <br><br>
+            <button type="submit">Envoyer</button>
+            <br><br><br><br><br><br><br><br><br><br><br>    
+        </form>
+        </div>
+       
+
+</main>
+
+
+
+
+
+<footer id="footer">
+    <p>Copyright Société LaFleur <br> Site fait par le groupe 4 GI2</p>
+</footer>
+
+</body>
