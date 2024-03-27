@@ -17,19 +17,14 @@ body{
 
 
 table tr td{
-    /*border: 2px solid black;*/
+    
     width:30vh;
     height: 30vh;
     background-color:rgb(187, 182, 182);
     
 }
 
-.prod{
 
-    margin: 10px;
-    border: 30px solid black;
-    
-}
 
 
 .pcontainer{
@@ -50,3 +45,10 @@ table tr td{
 .price{
     border-radius: 0px 35px 60px 0px;
 }
+
+/*<tr class="prod">
+            <td class="pcontainer"><img  class="pic" src="" alt=""></td>
+            <td></td>
+            <td></td>
+            <td class="price"></td>
+        </tr>*/
