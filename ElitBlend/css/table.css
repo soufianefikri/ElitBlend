@@ -1,0 +1,54 @@
+body{
+    background-color: wheat;
+}
+
+.products{
+    background-color: white;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0 3em;
+    border: 2em solid white;
+    margin: 0 auto; 
+    border-radius: 60px 60px 60px 60px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+}
+
+
+table tr td{
+    
+    width:30vh;
+    height: 30vh;
+    background-color:rgb(187, 182, 182);
+    
+}
+
+
+
+
+.pcontainer{
+
+    padding: 10px;
+    border-radius: 60px 0px 0px 35px;
+    background-color: rgb(204, 193, 155);
+}
+
+.pic{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 60px 35px 60px 35px;
+}
+
+.price{
+    border-radius: 0px 35px 60px 0px;
+}
+
+/*<tr class="prod">
+            <td class="pcontainer"><img  class="pic" src="" alt=""></td>
+            <td></td>
+            <td></td>
+            <td class="price"></td>
+        </tr>*/
