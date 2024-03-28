@@ -3,11 +3,11 @@ body{
 }
 
 .products{
-    background-color: white;
+    background-color: rgb(25, 83, 95);
     text-align: center;
     border-collapse: separate;
     border-spacing: 0 3em;
-    border: 2em solid white;
+    border: 2em solid rgb(25, 83, 95);
     margin: 0 auto; 
     border-radius: 60px 60px 60px 60px;
     margin-top: 5vh;
@@ -16,11 +16,12 @@ body{
 }
 
 
+
 table tr td{
     
     width:30vh;
     height: 30vh;
-    background-color:rgb(187, 182, 182);
+    background-color:#b8b8b8;
     
 }
 
@@ -31,7 +32,7 @@ table tr td{
 
     padding: 10px;
     border-radius: 60px 0px 0px 35px;
-    background-color: rgb(204, 193, 155);
+    background-color: #b8b8b8;
 }
 
 .pic{
@@ -46,9 +47,3 @@ table tr td{
     border-radius: 0px 35px 60px 0px;
 }
 
-/*<tr class="prod">
-            <td class="pcontainer"><img  class="pic" src="" alt=""></td>
-            <td></td>
-            <td></td>
-            <td class="price"></td>
-        </tr>*/
