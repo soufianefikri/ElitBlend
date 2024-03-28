@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>ElitBlend</title>
 </head>
 <body>
     <header>
         <div class="header1">
+            <div class="menuBtn">
+                <button class="menubutton"><img  src="../img/menu.png" alt=""></button>
+            </div> 
             <div class="ElitBlend">
                 <a href="./index.html">
                     <img  id="logo" src="../img/logo.png" alt="ElitBlend logo">
@@ -37,6 +41,14 @@
             <a class="redirection" href="./clothing.html">Clothing & Accessories</a>
         </div>
     </header>
+    <div class="sidemenu">
+        <a  class="menred" href="./index.html">Homepage</a>
+        <a  class="menred" href="./protein.html">Protein</a>
+        <a  class="menred" href="./nutrition.html">Nutrition</a>
+        <a  class="menred" href="./bars.html">Bars,Drinks & Snacks</a>
+        <a  class="menred" href="./vitamins.html">Vitamins&Minerals</a>
+        <a  class="menred" href="./clothing.html">Clothing & Accessories</a>
+    </div>
     <table class="products">
         <tr class="prod">
             <td class="pcontainer"><img  class="pic" src="https://content.optimumnutrition.com/i/on/on-1097041_Image_01?$TTL_PRODUCT_IMAGES$&locale=en-us,en-gb,*&w=509&sm=aspect&aspect=1:1&fmt=webp" alt=""></td>
@@ -174,5 +186,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        const sidemenu = document.querySelector('.sidemenu');
+        const menuBtn = document.querySelector('.menuBtn');
+        let isMenuVisible = false;
+    
+        menuBtn.addEventListener('click', function() {
+            if (isMenuVisible) {
+                sidemenu.style.display = 'none';
+                isMenuVisible = false;
+                
+            } else {
+                sidemenu.style.display = 'flex'; // or 'inline-block', depending on your layout
+                isMenuVisible = true;
+                
+            }
+        });
+    </script>
 </body>
 </html>

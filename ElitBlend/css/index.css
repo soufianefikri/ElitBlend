@@ -11,6 +11,7 @@
 }
 
 
+
 header{
     background-color: #ece0d1;
     height: max-content;
@@ -24,6 +25,8 @@ header{
     display: flex;
     padding-top: 15px;
     margin-bottom: 40px;
+    overflow: auto;
+    overflow-wrap: break-word;
 }
 
 #logo{
@@ -114,8 +117,8 @@ header{
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 15px;
-    margin-left: 60px;
-    margin-right: 60px;
+    overflow: auto;
+    overflow-wrap: break-word;
 }
 
 .redirection{
@@ -238,6 +241,8 @@ footer{
     justify-content: space-around;
     margin-bottom: 40px;
     height: 25%;
+    overflow: auto;
+    overflow-wrap: break-word;
     
 }
 
@@ -276,6 +281,8 @@ footer{
     margin-right: 40px;
     border-top: 1px solid rgb(117, 117, 121);
     padding-top: 15px;
+    overflow: auto;
+    overflow-wrap: break-word;
 }
 
 .foptions{
@@ -299,10 +306,12 @@ footer{
     margin-top: 15px;
     margin-left: 40px;
     margin-right: 40px;
-    /*margin-bottom: 30px;*/
+    
     border-top: 1px solid rgb(117, 117, 121);
     padding-top: 15px;
     padding-bottom: 30px;
+    overflow: auto;
+    overflow-wrap: break-word;
 }
 
 

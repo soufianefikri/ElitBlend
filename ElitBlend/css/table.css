@@ -1,5 +1,7 @@
 body{
     background-color: wheat;
+
+    width: 100vw;
 }
 
 .products{
@@ -12,9 +14,13 @@ body{
     border-radius: 60px 60px 60px 60px;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    height: max-content;
+    width: auto;
+
+
+    
 
 }
-
 
 
 table tr td{
@@ -22,6 +28,8 @@ table tr td{
     width:30vh;
     height: 30vh;
     background-color:#b8b8b8;
+    padding: 3px;
+    
     
 }
 

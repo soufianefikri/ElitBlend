@@ -1,0 +1,106 @@
+
+
+.sidemenu{
+    position: fixed;
+    z-index: 100;
+    background-color: rgba( 115,115,115, 0.9);
+    width: 30vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: scroll;
+}
+
+.menred{
+    color: white;
+    font-size: 1.25rem;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 10px;
+    display: inherit;
+    margin: 3rem;
+}
+
+.menred:hover{
+    color: #63a0b7;
+    
+}
+
+.menred::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #63a0b7;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.menred:hover::before {
+    transform: scaleX(1);
+}
+.menuBtn{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.menuBtn:hover{
+    background-color: #d9b07e;
+    border-radius: 10px;
+}
+.menubutton{
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    background-color: inherit;
+    border: none;
+  
+
+
+}
+.menubutton:hover{
+    background-color: inherit;
+}
+/*
+<script>
+        let menubutton = document.querySelector('.menubutton');
+        let menubuttonclose = document.querySelector('.close');
+        let menu = document.querySelector('.sidemenu-hidden');
+        let redirect = document.querySelector('.menred-hidden');
+
+        menubutton.onclick = function (){
+            menu.classList.remove('-hidden');
+            redirect.classList.remove('-hidden');
+        }
+        let menuBtn = document.querySelector('.menuBtn');
+        let closeBtn = document.querySelector('.closeBtn');
+        let sidemenu = document.querySelector('.sidemenu-hidden');
+        let menred = document.querySelector('.menred-hidden');
+    
+        closeBtn.onclick = function () {
+            sidemenu.classList.add('active');
+            closeBtn.classList.add('active');
+            searchBtn.classList.add('active');
+            menu.classList.add('hide');
+            header.classList.remove('open');
+            searchForm.innerHTML = '<input type="text" placeholder="Recherche . . ." name="searchInput"><input type="submit" value="Chercher" class="submitBtn">';
+        }
+    
+        menuBtn.onclick = function () {
+            sidemenu.classList.remove('hidden');
+            sidemenu.classList.add('active');
+            closeBtn.classList.remove('hidden');
+            searchBtn.classList.add('active');
+            
+        }
+        
+    </script>
+*/
