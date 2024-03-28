@@ -69,38 +69,4 @@
 .menubutton:hover{
     background-color: inherit;
 }
-/*
-<script>
-        let menubutton = document.querySelector('.menubutton');
-        let menubuttonclose = document.querySelector('.close');
-        let menu = document.querySelector('.sidemenu-hidden');
-        let redirect = document.querySelector('.menred-hidden');
-
-        menubutton.onclick = function (){
-            menu.classList.remove('-hidden');
-            redirect.classList.remove('-hidden');
-        }
-        let menuBtn = document.querySelector('.menuBtn');
-        let closeBtn = document.querySelector('.closeBtn');
-        let sidemenu = document.querySelector('.sidemenu-hidden');
-        let menred = document.querySelector('.menred-hidden');
-    
-        closeBtn.onclick = function () {
-            sidemenu.classList.add('active');
-            closeBtn.classList.add('active');
-            searchBtn.classList.add('active');
-            menu.classList.add('hide');
-            header.classList.remove('open');
-            searchForm.innerHTML = '<input type="text" placeholder="Recherche . . ." name="searchInput"><input type="submit" value="Chercher" class="submitBtn">';
-        }
-    
-        menuBtn.onclick = function () {
-            sidemenu.classList.remove('hidden');
-            sidemenu.classList.add('active');
-            closeBtn.classList.remove('hidden');
-            searchBtn.classList.add('active');
-            
-        }
-        
-    </script>
-*/
+/
