@@ -52,7 +52,7 @@
     <div class="presentation">
         <div class="moto">
             <span id="moto1">Only the best for you</span><br>
-            <span id="moto2">Quality products carefullty selected for you</span>
+            <span id="moto2">Quality products carefully selected for you</span>
         </div>
         <img src="https://uksportstraining.com/wp-content/uploads/2022/09/Blog-Photos-2021-12-07T122304.925.png" alt="picture of people at the gym" class="working">
     </div>
@@ -137,6 +137,7 @@
             </div>
         </div>
     </footer>
+    
     <script>
         const sidemenu = document.querySelector('.sidemenu');
         const menuBtn = document.querySelector('.menuBtn');
@@ -153,19 +154,7 @@
                 
             }
         });
-        const sidebar = document.querySelector('.sidemenu');
-
-        // Add event listener for mouse wheel
-        document.addEventListener('wheel', function(event) {
-        // Check if mouse wheel event occurred inside the sidebar
-        if (event.target.closest('.sidebar')) {
-            // Prevent default scrolling behavior
-            event.preventDefault();
-        
-            // Calculate the new scrollTop value based on the wheel delta
-            sidebar.scrollTop += event.deltaY;
-    }
-});
+       
     </script>
     
 </body>

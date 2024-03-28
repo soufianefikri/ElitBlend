@@ -9,8 +9,9 @@
     display: none;
     flex-direction: column;
     align-items: center;
-
     overflow: scroll;
+    overflow-y: auto;
+    
 }
 
 .menred{
@@ -69,4 +70,4 @@
 .menubutton:hover{
     background-color: inherit;
 }
-/
+
