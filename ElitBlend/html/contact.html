@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>ElitBlend</title>
 
@@ -12,6 +13,9 @@
 <body>
     <header>
         <div class="header1">
+            <div class="menuBtn">
+                <button class="menubutton"><img  src="../img/menu.png" alt=""></button>
+            </div> 
             <div class="ElitBlend">
                 <a href="./index.html">
                     <img  id="logo" src="../img/logo.png" alt="ElitBlend logo">
@@ -38,6 +42,14 @@
             <a class="redirection" href="./clothing.html">Clothing & Accessories</a>
         </div>
     </header>
+    <div class="sidemenu">
+        <a  class="menred" href="./index.html">Homepage</a>
+        <a  class="menred" href="./protein.html">Protein</a>
+        <a  class="menred" href="./nutrition.html">Nutrition</a>
+        <a  class="menred" href="./bars.html">Bars,Drinks & Snacks</a>
+        <a  class="menred" href="./vitamins.html">Vitamins&Minerals</a>
+        <a  class="menred" href="./clothing.html">Clothing & Accessories</a>
+    </div>
     <div id="contactsection">
         <h1>Contact</h1>
         <form action="/submit_form" method="post">
@@ -201,5 +213,23 @@
             </div>
         </div>
     </footer>
+    <script>
+        const sidemenu = document.querySelector('.sidemenu');
+        const menuBtn = document.querySelector('.menuBtn');
+        let isMenuVisible = false;
+    
+        menuBtn.addEventListener('click', function() {
+            if (isMenuVisible) {
+                sidemenu.style.display = 'none';
+                isMenuVisible = false;
+                
+            } else {
+                sidemenu.style.display = 'flex'; // or 'inline-block', depending on your layout
+                isMenuVisible = true;
+                
+            }
+        });
+       
+    </script>
 </body>
 </html>
