@@ -126,6 +126,7 @@ button:hover {
 
 input:checked+.radio-tile {
     transform: scale(1.2);
+    transition: .5s;
 }
 input:checked+.radio-tile ion-icon,
 input:checked+.radio-tile label {
