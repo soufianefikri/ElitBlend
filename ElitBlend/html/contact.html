@@ -1,221 +1,205 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="en">
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lafleur Contact</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            font-family: Arial, sans-serif;
-            margin-bottom: 3vh;
-        }
-        header {
-            background-color: #333;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        #menuheader a {
-            text-decoration: none;
-            color: #fff;
-        }
-        #menuheader{
-            list-style-type: none;
-        }
-        #menuheader li{
-            display: inline;
-            margin-left: 20px;
-        }
-        .banner img {
-            max-height: 50px; 
-            margin-left: 20%;
-        }
-        #footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .login-space p{
-            color: #fff;
-        }
-        .buttonlogin {
-            display: inline-block;
-            padding: 10px 20px;
-            text-decoration: none;
-            background-color: #3498db;
-            color: #fff;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .buttonlogin:hover {
-            background-color: #2980b9;
-        }
-        #menugauche{
-            margin-top: 0%;
-            background-color: grey;
-            height: 100vh;
-            width: 15%;
-            float: left;
-        }
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>ElitBlend</title>
 
-        #menugaucheliste a {
-            text-decoration: none;
-            color: #fff;
-        }
-        #menugaucheliste{
-            margin-top: 50%;
-            list-style-type: none;
-        }
-        #menugaucheliste li{    
-            margin-bottom: 20%;
-        }
-        #principal{
-            float: inline-start;
-            height: 100vh;
-            background-color: white;
-            width: 90vh;
-            float: center;
-            margin-left: 35vh;
-        }
-
-
-
-        form {
-            width: 300px;
-            margin: 0 auto;
-        }
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-        input[type="text"], input[type="email"], input[type="date"] {
-            width: 100%;
-            padding: 5px;
-            margin-top: 5px;
-        }
-        select {
-            width: 100%;
-            padding: 5px;
-            margin-top: 5px;
-        }
-        textarea {
-            width: 100%;
-            padding: 5px;
-            margin-top: 5px;
-            height: 100px;
-        }
-        input[type="submit"] {
-            width: 100%;
-            padding: 5px;
-            margin-top: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        label{
-            display: inline;
-        }
-
-    </style>
-    
 </head>
 <body>
-    
-
-
-<header>
-    <div class="banner">
-        <a href="index.html"><img src="img/Untitled.jpeg" alt="Logo du site"></a>
-    </div>
-        <ul id="menuheader">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="bulbes.html">Bulbes</a></li>
-            <li><a href="rosiers.html">Rosiers</a></li>
-            <li><a href="massifs.html">Plantes à massif</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-    <div class="login-space">
-       <p>Vous êtes déjà client ?<br> <a href="#" class="buttonlogin">Connectez-vous</a></p>
-    </div>
-</header>
-
-<main>
-    <div id="menugauche">
-            <ul id="menugaucheliste">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="bulbes.html">Bulbes</a></li>
-                <li><a href="rosiers.html">Rosiers</a></li>
-                <li><a href="massifs.html">Plantes à massif</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-    </div>
-    <div id="principal">
-        <div>
-            <center><p>Demande de contact</p></center>
-        <form action="/submit_form" method="post">
-
-            <label for="name">Date de contact</label>
-            <input type="date" id="datecontact" name="date" required>
-            <br><br>
-            <label for="name">Entrez votre nom</label>
-            <input type="text" id="name" name="name" required>
-            <br><br>
-            <label for="firstname">Prénom</label>
-            <input type="text" id="firstname" name="firstname" required>
-            <br><br>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-            <br><br>
-            <label for="email">Sexe</label>
-            <input type="radio" name="sexe" value="homme" required>
-            Homme
-            <input type="radio" name="sexe" value="femme" required  >
-            Femme
-            <br><br>
-            <label for="name">Date de naissance</label>
-            <input type="date" id="datenaissance" name="date" required>
-            <br><br>
-            <label for="name">Secteur d'activité</label>
-            <select id="secteur" name="secteur" required>
-                <option value="finance">Finance</option>
-                <option value="technologie">Technologie</option>
-                <option value="santé">Santé</option>
-                <option value="éducation">Éducation</option>
-            </select>
-            <br><br>
-            <label for="name">Sujet</label>
-            <input type="text" id="name" name="name" required>
-            <br><br>
-            <label for="name">Conenu</label>
-            <textarea name="message" id="message" placeholder="Saisissez votre message ici..."></textarea>
-            <br><br>
-            <button type="submit">Envoyer</button>
-            <br><br><br><br><br><br><br><br><br><br><br>    
-        </form>
+    <header>
+        <div class="header1">
+            <div class="ElitBlend">
+                <a href="./index.html">
+                    <img  id="logo" src="../img/logo.png" alt="ElitBlend logo">
+                    <span>ElitBlend</span>
+                </a>
+            </div>
+            <div class="search">
+                <span class="search-icon material-symbols-outlined">search</span>
+                <input class="search-input" type="search" placeholder="SEARCH">
+            </div>
+            <!--locatio account contact /icon -->
+            <div class="lac">
+                <img class="laci" src="../img/france.png" alt="Delivered to France">
+                <a href="../html/"><img class="laci" src="../img/user.png" alt=""></a>
+                <a href="../html/contact.html"><img class="laci" src="../img/customer-care.png" alt="contact us"></a>
+            </div>
         </div>
-       
+        <div class="redirect">
+            <a class="redirection" href="./index.html">Homepage</a>
+            <a class="redirection" href="./protein.html">Protein</a>
+            <a class="redirection" href="./nutrition.html">Nutrition</a>
+            <a class="redirection" href="./bars.html">Bars,Drinks & Snacks</a>
+            <a class="redirection" href="./vitamins.html">Vitamins&Minerals</a>
+            <a class="redirection" href="./clothing.html">Clothing & Accessories</a>
+        </div>
+    </header>
+    <div id="contactsection">
+        <h1>Contact</h1>
+        <form action="/submit_form" method="post">
+            <div class="input_group">
+                <input class="contact_inputs" class="date" type="date" id="datecontact" name="date"  placeholder="" required>
+                <label for="datecontact" class="date">Contact date</label>
+            </div>
+            <div class="input_group">
+                <input class="contact_inputs" type="text" id="name" name="name" required>
+                <label for="name">Name</label>    
+            </div>
+            
+            <div class="input_group">
+               <input class="contact_inputs" type="text" id="firstname" name="firstname" required>
+                <label for="firstname">First name</label> 
+            </div>
 
-</main>
+            <div class="input_group">
+                <input class="contact_inputs" type="email" id="email" name="email" required >
+                <label for="email">Email</label>   
+            </div>
+
+            <div class="input_group">
+                
+            </div>
+
+            <div class="radiosex">
+                <div class="radio-tile-group">
+          
+                  <div class="input-radiosex">
+                    <input id="male" type="radio" name="radio">
+                    <div class="radio-tile">
+                      <ion-icon name="male"></ion-icon>
+                      <label for="male">Male</label>
+                    </div>
+                  </div>
+          
+                  <div class="input-radiosex">
+                    <input id="female" type="radio" name="radio">
+                    <div class="radio-tile">
+                      <ion-icon name="female"></ion-icon>
+                      <label for="female">Female</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="input_group">
+                <input class="contact_inputs" type="date" id="birthdate" name="birthdate" required>
+                <label for="birthdate" class="date">Your birth date</label>
+            </div>
+
+            <div class="input_group">
+                <select class="contact_inputs" id="activityarea" name="activityarea" required>
+                <option value="default" hidden>Activity area</option>
+                <option value="finance">Finance</option>
+                <option value="technology">Technology</option>
+                <option value="health">Health</option>
+                <option value="education">Education</option>
+                </select>
+            </div>
+
+            
+            
+            <div class="input_group">
+                <input class="contact_inputs" type="text" id="subject" name="subject" required>
+                <label for="subject">Subject</label>
+            </div>
+            
+            <div class="input_group">
+                <textarea class="contact_inputs" name="message" id="message" required placeholder="Write your message here..."></textarea>
+            </div>
 
 
+            
+            <br>
 
+            <button type="submit">Submit</button>
+              
+        </form>
+    </div>
 
+    
+    <footer>
+        <div id="footer1">
+            <div class="foptions">
+                <div class="footerblock">
+                    <h3 class="f1_title">Customer Support</h3>
+                    <ul>
+                        <li class="ref">Customer Service</li>
+                        <li class="ref">Delivery Information</li>
+                        <li class="ref">FAQ</li>
+                        <li class="ref">Return Policy</li>
+                        <a href="./contact.html"><li class="ref">Contact</li></a>
+                        <li class="ref">Quality Assurance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foptions">
+                <div class="footerblock">
+                    <h3 class="f1_title">Loyalty & Rewards</h3>
+                    <ul>
+                        <li class="ref">Refer a friend</li>
+                        <li class="ref">Students & Graduates discounts</li>
+                        <li class="ref">Discount Codes</li>
+                        <li class="ref">Key workers discounts</li>
+                        <li class="ref">Upcoming Events</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foptions">
+                <div class="footerblock">
+                    <h3 class="f1_title">Company Information</h3>
+                    <ul>
+                        <li class="ref">Ways to work with us</li>
+                        <li class="ref">Careers</li>
+                        <li class="ref">About us</li>
+                        <li class="ref">Sustainability</li>
+                        <li class="ref">Supplier pledge</li>
+                        <li class="ref">Website Accessibility</li>
+                        <li class="ref">Newsletter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer2">
+            <div id="payment"> 
+                <img class="paycard" src="../img/payment/visa-card.svg" alt="visa paying card"/>
+                <img class="paycard" src="../img/payment/mastercard-card.svg" alt=" mastercard paying card"/>
+                <img class="paycard" src="../img/payment/carte-bleu.png" alt=" carte bancaire paying card"/>
+                <img class="paycard" src="../img/payment/amex-card.svg" alt="american express paying card"/>
+                <img class="paycard" src="../img/payment/applepay-card.svg" alt="apple pay paying card"/>
+                <img class="paycardspe" src="../img/payment/pnggpay.png" alt="google pay paying card"/>
+                <img class="paycard" src="../img/payment/paypal-card.svg" alt="paypal paying card"/>
+                <img class="paycard" src="../img/payment/afterpay.svg" alt="afterpay paying card"/>
+                <img class="paycard" src="../img/payment/klarna.svg" alt="klarna paying card"/>
 
-<footer id="footer">
-    <p>Copyright Société LaFleur <br> Site fait par le groupe 4 GI2</p>
-</footer>
+            </div>
+            <div id="socials">
+                <img class="social" src="../img/socials/instagram.png" alt="link to our instagram page"/>
+                <img class="social" src="../img/socials/youtube.png" alt="link to our youtube channem "/>
+                <img class="social" src="../img/socials/tik-tok.png" alt="link to our tiktok account"/>
+                <img class="social" src="../img/socials/facebook.png" alt="link to our facebook page "/>
+                <img class="social" src="../img/socials/games.png" alt="link to our discord server"/>
+                <img class="social" src="../img/socials/snapchat.png" alt="link to our snapchat "/>
+                <img class="social" src="../img/socials/twitter.png" alt="link to our twitter account"/>
+                <img class="social" src="../img/socials/pinterest.png" alt="link to our pintrest account"/>
+            </div>
 
+        </div>
+        <div id="footer3">
+            <div id="copyright">
+                <p>© 2024 | ElitBlend Limited | All Rights Reserved. | United We Train </p>
+            </div>
+            <div id="terms">
+                <a href="">Terms & Conditions</a>
+                <a href="">Terms of Use</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Cookie Policy</a>
+
+            </div>
+        </div>
+    </footer>
 </body>
+</html>
