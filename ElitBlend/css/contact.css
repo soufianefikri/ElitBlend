@@ -4,7 +4,7 @@ body{
 }
 
 #contactsection{
-    background-color: #e67342;
+    background-color: #b8b8b8;
     text-align: center;
     border-collapse: separate;
     border-spacing: 0 4em;
@@ -32,7 +32,7 @@ h1{
     padding-left: 25px;
     padding-right: 25px;
     font-weight: 500;
-    background-color: #e67342;
+    background-color: #b8b8b8;
     border-radius: 8px;
     margin: 10px 0;
 }
@@ -71,11 +71,11 @@ textarea{
 .input_group input:valid~label{
     top: 15%;
     font-size: 16px;
-    background: #e67342;
+    background: #b8b8b8;
     border-radius: 8px;
 }
 .date{
-    background-color: #e67342;
+    background-color: #b8b8b8;
 }
 #activityarea{
     font-size: 16px;
@@ -125,7 +125,7 @@ button:hover {
 }
 
 input:checked+.radio-tile {
-    transform: scale(1.2);
+    transform: scale(1.5);
     transition: .5s;
 }
 input:checked+.radio-tile ion-icon,
