@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif; /* Tous les élément du body seront avec la police Poppins */
-    
+    overflow-x:hidden;
 
 
 }
